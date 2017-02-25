@@ -5,16 +5,16 @@ package chapter01;
  */
 public class Chapter01 {
     public static void main(String[] args) {
-//        page009();
-//        page010();
-//        page011();
-//        page012();
-//        page013();
-//        page014();
-//        page016();
-//        page020();
-//        page021();
-//        page023();
+        page009();
+        page010();
+        page011();
+        page012();
+        page013();
+        page014();
+        page016();
+        page020();
+        page021();
+        page023();
         page024();
     }
 
@@ -188,7 +188,6 @@ public class Chapter01 {
 
     private static void page024() {
         int x = 0;
-        int y = 0;
 
         while (x < 3) {
             System.out.print("a");
@@ -210,9 +209,6 @@ public class Chapter01 {
             }
             System.out.println("");
             x = x + 1;
-
-            y++;
         }
-
     }
 }
