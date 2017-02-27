@@ -1,11 +1,26 @@
 package chapter02;
 
 /**
- * Created by jotaiwan on 26/02/2017.
- * page 37
+ * Created by jotaiwan on 27/02/2017.
  */
-public class MovieTestDrive {
+public class _Chapter02Runner {
     public static void main(String[] args) {
+        dogTestDrive();
+        gameLauncher();
+    }
+
+    private static void dogTestDrive() {
+        Dog d = new Dog();
+        d.size = 40;
+        d.bark();
+    }
+
+    private static void gameLauncher() {
+        GuessGame game = new GuessGame();
+        game.startGame();
+    }
+
+    private static void movieTestDrive() {
         Movie one = new Movie();
         one.title = "Gone with the Stock";
         one.genre = "Tragic";

@@ -3,7 +3,7 @@ package chapter01;
 /**
  * Created by jotaiwan on 25/02/2017.
  */
-public class Chapter01 {
+public class _Chapter01Runner {
     public static void main(String[] args) {
         page009();
         page010();
