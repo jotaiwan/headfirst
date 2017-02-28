@@ -7,8 +7,8 @@ package chapter03;
 public class _Chapter03Runner {
 
     public static void main(String[] args) {
-        page052();
-//        page061();
+//        page052();
+        page061();
 //        page062();
         // page63 goes to HobbitPage063
 //        page064();
