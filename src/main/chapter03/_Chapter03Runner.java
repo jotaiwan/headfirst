@@ -7,11 +7,26 @@ package chapter03;
 public class _Chapter03Runner {
 
     public static void main(String[] args) {
-        page061();
-        page062();
+        page052();
+//        page061();
+//        page062();
         // page63 goes to HobbitPage063
-        page064();
+//        page064();
         // page065 goes to TrianglePage065
+    }
+
+    private static void page052() {
+//        int x = 34.5;
+//        boolean boo = x;
+        int g = 17;
+        int y = g;
+        y = y + 10;
+        short s;
+//        s = y;
+        byte b = 3;
+        byte v = b;
+        short n = 12;
+//        v = n;
     }
 
     private static void page061() {
