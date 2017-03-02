@@ -9,6 +9,9 @@ public class _Chapter04Runner {
         page073();
         page074();
         page082();      // example of Encapsulation
+        page083();
+        page084();
+        page085();
     }
 
     private static void page072() {
@@ -53,5 +56,29 @@ public class _Chapter04Runner {
         System.out.println("Dog two:" + two.getSize());
         one.bark();
         two.bark();
+    }
+
+    private static void page083() {
+        GoodDog[] pets;
+        pets = new GoodDog[7];
+
+        pets[0] = new GoodDog();
+        pets[1] = new GoodDog();
+
+        pets[0].setSize(30);
+        int x = pets[0].getSize();
+        pets[1].setSize(8);
+    }
+
+    private static void page084() {
+        PoorDog one = new PoorDog();
+        System.out.println("Dog size is " + one.getSize());
+        System.out.println("Dog name is " + one.getName());
+    }
+
+    private static void page085() {
+        AddThing addThing = new AddThing();
+        addThing.add();
+        System.out.println("What's addThing.add(): " + addThing.add());
     }
 }
