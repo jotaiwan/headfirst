@@ -12,6 +12,9 @@ public class _Chapter04Runner {
         page083();
         page084();
         page085();
+        page087();
+        page088();
+        page090();
     }
 
     private static void page072() {
@@ -80,5 +83,34 @@ public class _Chapter04Runner {
         AddThing addThing = new AddThing();
         addThing.add();
         System.out.println("What's addThing.add(): " + addThing.add());
+    }
+
+    private static int calcArea(int height, int width) {
+        return height * width;
+    }
+
+    private static void page087() {
+        int a = calcArea(7, 12);
+        short c = 7;
+//        calcAreea(c, 15);   // can't resolve method (short, int)
+//        int d = calcArea(57);   // can't apply (int, int) to (int)
+        calcArea(2, 3);
+        long t = 42;
+//        int f = calcArea(t, 17);    // can't resolve (long, int)
+//        int g = calcArea();         // can't resolve method without argument
+//        calcArea();                 // can't resolve method without argument
+//        byte h = calcArea(4, 20);       // incompatible type
+//        int j = calcArea(2, 3, 4);      // can't reply 3 arguments into method
+    }
+
+    private static void page088() {
+        Clock c = new Clock();
+        c.setTime("1234");
+        String tod = c.getTime();
+        System.out.println("time: " + tod);
+    }
+
+    private static void page090() {
+
     }
 }
