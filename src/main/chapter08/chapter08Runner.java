@@ -20,7 +20,7 @@ public class chapter08Runner {
 
     private static void polymorphismExample() {
         Operater(new PolymorphismAirConditioner("Pansonic"));
-        Operater(new PolymorphismAirConditioner("National"));
+        Operater(new PolymorphismElectronicDoor("National"));
     }
 
     //Super Remote Controller
