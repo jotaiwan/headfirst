@@ -9,6 +9,11 @@ public class chapter08Runner {
 
         testAnimal();
         polymorphismExample();
+
+        page212();
+        superStudent();
+
+        superPerson();
     }
 
     private static void testAnimal() {
@@ -29,5 +34,28 @@ public class chapter08Runner {
         System.out.println("RemoteName: " + oRC.getName());
         System.out.println(oRC.turnOn());
         System.out.println(oRC.turnOff());
+    }
+
+    private static void page212() {
+        DogChapter08 aDog = new DogChapter08();
+        Object sameDog = getObject(aDog);
+        System.out.println("has code for aDog: " + aDog.hashCode());
+        System.out.println("has code for sameDog: " + sameDog.hashCode());
+    }
+
+    private static Object getObject(Object o) {
+        return o;
+    }
+
+    private static void superStudent() {
+        System.out.println("\n");
+        SuperSonStudent Lung = new SuperSonStudent(65,164,99);
+        Lung.showData();
+    }
+
+    private static void superPerson() {
+        SuperChinese c = new SuperChinese();
+        c = new SuperChinese("Kelvin");
+        c = new SuperChinese("Kelvin", 30);
     }
 }
