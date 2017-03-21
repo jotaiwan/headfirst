@@ -1,5 +1,8 @@
 package chapter08;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by jotaiwan on 19/03/2017.
  */
@@ -7,13 +10,34 @@ public class chapter08Runner {
 
     public static void main(String[] args) {
 
-        testAnimal();
-        polymorphismExample();
+        testAnimalPolymorphism();
 
-        page212();
-        superStudent();
+//        testAnimal();
+//        polymorphismExample();
+//
+//        page212();
+//        superStudent();
+//
+//        superPerson();
+    }
 
-        superPerson();
+    private static void testAnimalPolymorphism() {
+        List<TestAnimal> animals = new ArrayList<>();
+        TestDogInterface dogInterface = new TestDog("interface", 5, 7);
+        dogInterface.beFriendly();
+//        dogInterface.speak();  // compile/runtime error
+
+        System.out.println("*****************");
+        TestDog testDog = new TestDog("Curry", 12, 10);
+        testDog.speak();
+        testDog.beFriendly();
+
+        TestAnimal animal = new TestAnimal() {
+            @Override
+            public void speak() {
+
+            }
+        };
     }
 
     private static void testAnimal() {
