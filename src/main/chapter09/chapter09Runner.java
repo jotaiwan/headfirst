@@ -8,6 +8,9 @@ import java.util.List;
  */
 public class chapter09Runner {
     public static void main(String[] args) {
+
+        exercise268();
+
         Animal09 a1 = new Dog09();
         System.out.println("*********************");
 
@@ -26,5 +29,17 @@ public class chapter09Runner {
         dog2.notAbstractButOverride();
         System.out.println("call notAbstractOverride2 now ....");
         dog2.notAbstractButOverride2();
+    }
+
+
+    public static void exercise268() {
+        ArrayList aList = new ArrayList();
+        V2Radiator v2 = new V2Radiator(aList);
+        V3Radiator v3 = new V3Radiator(aList);
+        for (int z=0; z<20; z++) {
+            RetentionBot ret = new RetentionBot(aList);
+        }
+
+        System.out.println("finished");
     }
 }
