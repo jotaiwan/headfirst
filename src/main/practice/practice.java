@@ -5,6 +5,8 @@
  */
 package practice;
 
+import practice.TestPackage.Type;
+import practice.TestPackage.TypeResult;
 import practice.alarmabstract.AlarmDoor;
 import practice.animal.Cat;
 import practice.animal.Dog;
@@ -17,6 +19,11 @@ import practice.polymorphism.Circle;
 import practice.polymorphism.Cube;
 import practice.polymorphism.IShape;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 /**
  *
@@ -28,6 +35,9 @@ public class practice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
+        playEnum();
+
         // TODO code application logic here
 //        playBankAccount();
 //        playInterface();
@@ -41,8 +51,33 @@ public class practice {
 //        } catch (ClassNotFoundException e) {
 //        }
 
-        playAutoBoxing();
-        playMessiveAlarm(); // interface, abstract class combination.
+//        playAutoBoxing();
+//        playMessiveAlarm(); // interface, abstract class combination.
+    }
+
+    private static void playEnum() {
+        Map<Type, String> results = new HashMap();
+        results.put(Type.TYPE_QA, "false");
+        results.put(Type.TYPE_QB, "true");
+        results.put(Type.TYPE_QC, "true");
+
+        List<TypeResult> typeResults = new ArrayList<>();
+        for (Type type : Type.values()) {
+            if (isFoundInList(typeResults, type)) {
+                // skip
+            } else {
+                typeResults.add(new TypeResult(type.getText(), results.get(type)));
+            }
+        }
+
+        for (TypeResult result : typeResults) {
+            System.out.println("Text: " + result.getText() + ", Result:" + result.getResult());
+        }
+    }
+
+    private static boolean isFoundInList(List<TypeResult> results, Type type) {
+        return results.stream().filter( r -> r.getText().toString() == type.getText().toString())
+                .findFirst().isPresent();
     }
 
     private static void classRelation() {

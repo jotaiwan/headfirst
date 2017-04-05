@@ -12,6 +12,8 @@ import static java.lang.String.format;
 public class _chapter10Runner {
 
     public static void main(String[] args) {
+
+
         page305();
         page301();
         page300();
@@ -24,6 +26,13 @@ public class _chapter10Runner {
         page279();
         page275();
         page274();
+
+        Math.ceil(5.5);
+        Math.floor(6.3);
+
+        System.out.println(format("%d", 42));
+        System.out.println(format("%.3f", 42.000000));
+        System.out.println(format("%c", 65));
     }
 
 
@@ -40,6 +49,22 @@ public class _chapter10Runner {
         System.out.println("roll 35 days " + c.getTime());
         c.set(c.DATE, 1);
         System.out.println("set to 1 " + c.getTime());
+
+
+        // displays the current calendar
+        System.out.println("Month is " + c.get(Calendar.MONTH));
+
+        // roll month
+        c.roll(Calendar.MONTH, true);
+
+        // print result after rolling
+        System.out.println("Month is (true) " + c.get(Calendar.MONTH));
+
+        // roll downwards
+        c.roll(Calendar.MONTH, false);
+
+        // print result after rolling down
+        System.out.println("Month is (false) " + c.get(Calendar.MONTH));
     }
 
     private static void page301() {

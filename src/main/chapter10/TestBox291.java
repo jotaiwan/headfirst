@@ -14,7 +14,7 @@ public class TestBox291 {
     }
 
     public void go() {
-//        j = i;
+        j = i;
         System.out.println("j: " + j);
         System.out.println("i: " + i);
     }
