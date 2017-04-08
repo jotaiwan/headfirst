@@ -10,15 +10,18 @@ public class chapter08Runner {
 
     public static void main(String[] args) {
 
+        testReport();
         testAnimalPolymorphism();
+        testAnimal();
+        polymorphismExample();
+        page212();
+        superStudent();
+        superPerson();
+    }
 
-//        testAnimal();
-//        polymorphismExample();
-//
-//        page212();
-//        superStudent();
-//
-//        superPerson();
+    private static void testReport() {
+        BuzzwordsReport report =  new BuzzwordsReport();
+        report.runReport();
     }
 
     private static void testAnimalPolymorphism() {
@@ -31,13 +34,6 @@ public class chapter08Runner {
         TestDog testDog = new TestDog("Curry", 12, 10);
         testDog.speak();
         testDog.beFriendly();
-
-        TestAnimal animal = new TestAnimal() {
-            @Override
-            public void speak() {
-
-            }
-        };
     }
 
     private static void testAnimal() {

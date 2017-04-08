@@ -8,6 +8,7 @@ public class Honey {
     public static void main(String[] args) {
         Honey honeyPot = new Honey();
         Honey [] ha = {honeyPot, honeyPot, honeyPot, honeyPot};
+
 //        Bees b1 = new Bees();
 //        b1.beeHa = ha;
 //        Bear [] ba = new Bear[5];
@@ -25,5 +26,6 @@ public class Honey {
 //        r.k = k;
 //        k = null;
 //        System.out.println("check r.k: " + r.k);
+
     }
 }
