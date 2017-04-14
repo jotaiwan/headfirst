@@ -36,6 +36,11 @@ public class practice {
      */
     public static void main(String[] args) {
 
+//        String [] s = new String[1];
+//        for (int i = 0; i < 3; i++) {
+//            s[i] = "3";
+//        }
+
         playEnum();
 
         // TODO code application logic here
