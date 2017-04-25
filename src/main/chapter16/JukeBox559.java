@@ -20,7 +20,11 @@ public class JukeBox559 {
 
     class ArtistCompare implements Comparator<Song550> {
         public int compare(Song550 s1, Song550 s2) {
+            // order by alphabetically asc:  a-z
             return s1.getArtist().compareTo(s2.getArtist());
+
+            // order by alpahbetically desc: i.e. z - a
+//            return s2.getArtist().compareTo(s1.getArtist());
         }
     }
 
@@ -30,6 +34,7 @@ public class JukeBox559 {
         Collections.sort(songList);
         pringSongOrderByTitle();
 
+        // use HashSet
         HashSet<Song550> songSet = new HashSet<>();
         songSet.addAll(songList);
         pringSongSetByTitle(songSet);

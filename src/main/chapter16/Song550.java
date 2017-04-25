@@ -53,4 +53,8 @@ public class Song550 implements Comparable<Song550> {
     public void setBpm(String bpm) {
         this.bpm = bpm;
     }
+
+    public String toString() {
+        return title;
+    }
 }

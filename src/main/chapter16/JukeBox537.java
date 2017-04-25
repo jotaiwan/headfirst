@@ -19,7 +19,7 @@ public class JukeBox537 {
     public void go(String fileWithPath) {
         getSong(fileWithPath);
         System.out.println(songList);
-//        Collections.sort(songList);           // ==> ERROR HERE
+//        Collections.sort(songList);           // ==> ERROR HERE: Song object doesn't implements Comparable
 //        System.out.println(songList);
     }
 

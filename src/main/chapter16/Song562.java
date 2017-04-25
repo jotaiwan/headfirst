@@ -9,11 +9,13 @@ public class Song562 implements Comparable<Song562> {
     private String rating;
     private String bpm;
 
+    // override the equals
     public boolean equals(Object aSong) {
         Song562 a = (Song562) aSong;
         return getTitle().equals(a.getTitle());
     }
 
+    // override the hascode
     public int hashCode() {
         return title.hashCode();
     }

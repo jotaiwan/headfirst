@@ -19,6 +19,8 @@ public class JukeBox535 {
     public void go(String fileWithPath) {
         getSong(fileWithPath);
         System.out.println(songList);
+
+        // ok to use Collections because String implements Comparable<String>
         Collections.sort(songList);
         System.out.println(songList);
     }

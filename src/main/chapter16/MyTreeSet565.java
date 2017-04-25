@@ -15,8 +15,8 @@ public class MyTreeSet565 {
         tree.add(b1);
         tree.add(b2);
         tree.add(b3);
-//        System.out.println(tree);
-        print1(tree);
+        System.out.println(tree.toString());
+//        print1(tree);
     }
 
     public void go1() {
@@ -28,7 +28,8 @@ public class MyTreeSet565 {
         tree.add(b1);
         tree.add(b2);
         tree.add(b3);
-        print2(tree);
+        System.out.println(tree.toString());
+//        print2(tree);
     }
 
     public void go2() {
@@ -41,7 +42,8 @@ public class MyTreeSet565 {
         tree.add(b1);
         tree.add(b2);
         tree.add(b3);
-        print3(tree);
+        System.out.println(tree.toString());
+//        print3(tree);
 
     }
 

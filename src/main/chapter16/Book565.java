@@ -21,4 +21,8 @@ public class Book565 implements Comparable<Book565> {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public String toString() {
+        return title;
+    }
 }
