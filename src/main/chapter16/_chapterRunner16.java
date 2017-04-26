@@ -16,13 +16,17 @@ public class _chapterRunner16 {
 
     public static void main(String[] args) {
 
-        beTheCompiler();
+//        beTheCompiler();
 
 //        new TestGenerics575().go();
 //        new TestGenerics569().go();
 //        new TestGenerics568().go();
-//        new MyTreeSet565().go2();       // TreeSet: no compareTo
-//        new MyTreeSet565().go1();       // TreeSet: compareTo(Object o)
+
+        new MyTreeSet565().goAsc();       // TreeSet: no compareTo
+        new MyTreeSet565().goDesc();       // TreeSet: compareTo(Object o)
+
+//        new MyTreeSet565().goWithComparator();       // TreeSet: no compareTo
+//        new MyTreeSet565().goWithoutComparator();       // TreeSet: compareTo(Object o)
 //        new MyTreeSet565().go();        // TreeSet: compareTo(Book565 b)
 
         // use Treeset, don't need to override hashCode and equals

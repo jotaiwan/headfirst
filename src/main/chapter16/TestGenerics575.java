@@ -24,6 +24,7 @@ public class TestGenerics575 {
 
     public <T extends Animal568> void takeAnimals(ArrayList<T> animals) {
         System.out.println("=== <T extends Animal568> void takeAnimals(ArrayList<T> animals) ===");
+        animals.add((T) new Dog568());
         for (Animal568 a : animals) {
             a.eat("animal");
         }
