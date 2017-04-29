@@ -9,4 +9,8 @@ public class Dog568 extends Animal568 {
     void bark() {
 
     }
+
+    void eat(String a) {
+        super.eat("Dog");
+    }
 }

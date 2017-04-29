@@ -18,12 +18,13 @@ public class _chapterRunner16 {
 
 //        beTheCompiler();
 
-//        new TestGenerics575().go();
+        new TestGenerics575().go();
+//        new TestGenerics572().go();
 //        new TestGenerics569().go();
 //        new TestGenerics568().go();
 
-        new MyTreeSet565().goAsc();       // TreeSet: no compareTo
-        new MyTreeSet565().goDesc();       // TreeSet: compareTo(Object o)
+//        new MyTreeSet565().goAsc();       // TreeSet: no compareTo
+//        new MyTreeSet565().goDesc();       // TreeSet: compareTo(Object o)
 
 //        new MyTreeSet565().goWithComparator();       // TreeSet: no compareTo
 //        new MyTreeSet565().goWithoutComparator();       // TreeSet: compareTo(Object o)

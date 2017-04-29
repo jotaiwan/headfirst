@@ -1,5 +1,6 @@
 package chapter16;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -17,10 +18,8 @@ public class ListDemo {
                 new ListPeople("Chris", 21)
         );
 
-        Collections.sort(people, (a, b) -> a.name.compareToIgnoreCase(b.name));
-        System.out.println(people);
-
-        Collections.sort(people, (a, b) -> a.age < b.age ? -1 : a.age == b.age ? 0 : 1);
+        ListPeopleComparator comparator = new ListPeopleComparator();
+        Collections.sort(people, comparator);
         System.out.println(people);
     }
 }

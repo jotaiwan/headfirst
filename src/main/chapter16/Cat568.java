@@ -7,4 +7,8 @@ public class Cat568 extends Animal568 {
     void meow() {
 
     }
+
+    void eat(String a) {
+        super.eat("Cat");
+    }
 }
