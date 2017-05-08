@@ -1,7 +1,5 @@
 package practice.annotation;
 
-// http://blog.sina.com.cn/s/blog_93dc666c0101gzn5.html
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;

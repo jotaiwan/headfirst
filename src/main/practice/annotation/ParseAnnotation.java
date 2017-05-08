@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  */
 public class ParseAnnotation {
     public static void parseTypeAnnotation() throws ClassNotFoundException {
-        Class clazz = Class.forName("demo.practice.annotation.UserAnnotation");
+        Class clazz = Class.forName("practice.annotation.UserAnnotation");
 
         Annotation[] annotations = clazz.getAnnotations();
         for (Annotation annotation : annotations) {
@@ -30,6 +30,16 @@ public class ParseAnnotation {
                         + " ; id = " + annotation.id() + " ; description = "
                         + annotation.name() + "; gid= "+annotation.gid());
             }
+
+            boolean hasAnnotation2 = method.isAnnotationPresent(SecondAnnotation.class);
+            if (hasAnnotation2) {
+
+                SecondAnnotation annotation = method.getAnnotation(SecondAnnotation.class);
+                System.out.println("method = " + method.getName()
+                        + " ; boolean = " + annotation.myBoolean() + " ; String = "
+                        + annotation.myString());
+            }
+
         }
     }
 

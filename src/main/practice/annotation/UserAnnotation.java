@@ -32,6 +32,11 @@ public class UserAnnotation {
         Map m = new HashMap(0);
     }
 
+    @SecondAnnotation(myBoolean=true, myString = "second method")
+    private void getSecondAnnotation(){
+        String s = "Second Annotation!!";
+    }
+
     public void b(Integer a){
     }
 }

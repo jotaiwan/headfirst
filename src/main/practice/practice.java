@@ -36,10 +36,8 @@ public class practice {
      */
     public static void main(String[] args) {
 
-//        String [] s = new String[1];
-//        for (int i = 0; i < 3; i++) {
-//            s[i] = "3";
-//        }
+        hashCodePractice();
+        exampleOfAddOjbectToArrayWithIndex();       // headfirst: P534
 
         playEnum();
 
@@ -199,4 +197,37 @@ public class practice {
         System.out.println(int1.compareTo(int2));
     }
 
+    private static void hashCodePractice() {
+        String s1 = "1234";
+        String s2 = "5678";
+        String s3 = "1234";
+
+        System.out.println("hashCod for s1 is: " + s1.hashCode());
+        System.out.println("hashCod for s2 is: " + s2.hashCode());
+        System.out.println("hashCod for s3 is: " + s3.hashCode());
+    }
+
+    private static void exampleOfAddOjbectToArrayWithIndex() {
+        ArrayList<String> arrs = new ArrayList<>();
+        arrs.add("T");
+        arrs.add("Q");
+        arrs.add("R");
+
+        printArrayValue("Old array:", arrs);
+
+        arrs.add(1, "C");
+        printArrayValue("New array:", arrs);
+    }
+
+    private static void printArrayValue(String message, ArrayList<String> arrs) {
+        printStepMessage("start print array value");
+        for (String s : arrs) {
+            System.out.println(message + " " + s);
+        }
+        printStepMessage("end of print array value");
+    }
+
+    private static void printStepMessage(String message) {
+        System.out.println("*** " + message + " ***");
+    }
 }
